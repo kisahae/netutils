@@ -98,7 +98,7 @@ class BaseSpaceConfigParser(BaseConfigParser):
         for banner_start in self.banner_start:
             if not line:
                 return False
-            if line.lstrip().startswith(banner_start):
+            if line.startswith(banner_start):
                 return True
         return False
 
